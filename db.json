@@ -1,0 +1,66 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    },
+    {
+      "id": "wbmY0D6ruUg",
+      "title": "title-sc08f4bo",
+      "content": "content-eaonbyq3",
+      "preview": "/images/1.jpeg"
+    },
+    {
+      "id": "yynT5mVSVC4",
+      "title": "title-0en20xr9",
+      "content": "content-9v82asu1",
+      "preview": "/images/1.jpeg"
+    },
+    {
+      "id": "bZWunuNBhJE",
+      "title": "title-iy15548g",
+      "content": "content-fiegd3ea",
+      "preview": "/images/1.jpeg"
+    },
+    {
+      "id": "WnJqpDyCLH0",
+      "title": "title-lxj97fit",
+      "content": "content-xeygjc5j",
+      "preview": "/images/1.jpeg"
+    },
+    {
+      "id": "N-R5kFSBmPU",
+      "title": "title-65pifbrs",
+      "content": "content-4z8kqe9s",
+      "preview": "/images/1.jpeg"
+    },
+    {
+      "id": "g4fcOsHMAFc",
+      "title": "title-vrvxco42",
+      "content": "content-ufu4m0ld",
+      "preview": "/images/1.jpeg"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "$schema": "./node_modules/json-server/schema.json"
+}
