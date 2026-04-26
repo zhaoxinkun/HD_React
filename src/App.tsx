@@ -6,9 +6,9 @@ const App = () => {
     const {AppRouterProvider} = useTanStackRouter()
 
     return (
-        <div>
+        <>
             <AppRouterProvider/>
-        </div>
+        </>
     );
 };
 
