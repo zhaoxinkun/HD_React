@@ -1,10 +1,13 @@
-import {Button} from "@/components/ui/button"
+import {useTanStackRouter} from "./hooks/useTanStackRouter.tsx";
 
 const App = () => {
+
+    // 使用路由的hooks
+    const {AppRouterProvider} = useTanStackRouter()
+
     return (
         <div>
-            this is app
-            <Button variant="outline">Button</Button>
+            <AppRouterProvider/>
         </div>
     );
 };
