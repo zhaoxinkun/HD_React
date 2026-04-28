@@ -4,8 +4,10 @@ import {FrontLayout} from "@/layout/FrontLayout.tsx";
 export const IndexPage = () => {
     return (
         <>
-            <FrontLayout></FrontLayout>
-            <Outlet></Outlet>
+            <FrontLayout/>
+            <main className="min-h-screen bg-gray-100">
+                <Outlet/>
+            </main>
         </>
     );
 };
