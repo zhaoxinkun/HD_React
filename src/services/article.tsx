@@ -3,7 +3,7 @@ import {useQuery} from "@tanstack/react-query";
 import type {AxiosError} from "axios";
 
 
-interface Article {
+export interface Article {
     id: string,
     title: string,
     content: string,

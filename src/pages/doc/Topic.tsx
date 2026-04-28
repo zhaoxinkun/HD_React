@@ -14,7 +14,7 @@ const Topic = () => {
     const {isPending, isError, error, data} = useGetLesson()
     if (isPending) return <div>加载中...</div>
     if (isError) return <Error error={error}/>
-    console.log(data[0])
+    // console.log(data[0])
     return (
         <>
             <section className="flex items-center justify-center ">
@@ -26,10 +26,11 @@ const Topic = () => {
 
                     <CardContent>
                         {
-                            Array(10).fill(null).map((_, i) => {
+                            data.map((article) => {
                                 return (
 
-                                    <BlogItem key={i} className="border-4 border-blue-400 mb-3!"></BlogItem>
+                                    <BlogItem key={article.id} article={article}
+                                              className="border-4 border-blue-400 mb-3!"></BlogItem>
 
                                 )
                             })
