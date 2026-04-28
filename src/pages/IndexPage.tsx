@@ -1,7 +1,7 @@
 import {Outlet} from "@tanstack/react-router";
 import {FrontLayout} from "@/layout/FrontLayout.tsx";
 
-export const IndexPage = () => {
+const IndexPage = () => {
     return (
         <>
             <FrontLayout/>
@@ -11,3 +11,4 @@ export const IndexPage = () => {
         </>
     );
 };
+export default IndexPage;

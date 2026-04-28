@@ -1,6 +1,6 @@
 import {Button} from "@/components/ui/button"
 
-const About = () => {
+export default function About() {
     return (
         <div>
             this is about page
@@ -10,5 +10,3 @@ const About = () => {
         </div>
     );
 };
-
-export default About;

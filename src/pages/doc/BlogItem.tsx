@@ -1,7 +1,7 @@
 import type {FC} from "react";
 import classNames from "classnames";
 
-export const BlogItem: FC<{ className?: string, state?: boolean }> = ({className, state}) => {
+const BlogItem: FC<{ className?: string, state?: boolean }> = ({className, state}) => {
     return (
         <>
             <div className={classNames(
@@ -13,3 +13,5 @@ export const BlogItem: FC<{ className?: string, state?: boolean }> = ({className
         </>
     );
 };
+
+export default BlogItem;

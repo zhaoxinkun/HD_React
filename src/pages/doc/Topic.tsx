@@ -6,9 +6,9 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
-import {BlogItem} from "@/pages/doc/BlogItem.tsx";
+import BlogItem from "@/pages/doc/BlogItem.tsx";
 
-export const Topic = () => {
+const Topic = () => {
     return (
         <>
             <section className="flex items-center justify-center ">
@@ -28,7 +28,6 @@ export const Topic = () => {
                                 )
                             })
                         }
-
                     </CardContent>
                     <CardFooter>
                     </CardFooter>
@@ -37,3 +36,5 @@ export const Topic = () => {
         </>
     );
 };
+
+export default Topic;
