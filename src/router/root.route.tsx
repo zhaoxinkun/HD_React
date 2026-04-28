@@ -1,9 +1,9 @@
 // 创建整个系统的根路由
 import {createRootRoute, Link} from "@tanstack/react-router";
-import IndexPage from "@/pages/IndexPage.tsx";
+import RootLayout from "@/layout/Rootlayout.tsx";
 
 const rootRoute = createRootRoute({
-    component: () => <IndexPage/>,
+    component: () => <RootLayout/>,
     notFoundComponent: () => { //404页面
         return (
             <div>
