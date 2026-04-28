@@ -11,9 +11,10 @@ import {useGetLesson} from "@/services/article.tsx";
 import Error from "@/components/error";
 
 const Topic = () => {
-    const {isPending, isError} = useGetLesson()
+    const {isPending, isError, error, data} = useGetLesson()
     if (isPending) return <div>加载中...</div>
-    if (isError) return <Error/>
+    if (isError) return <Error error={error}/>
+    console.log(data[0])
     return (
         <>
             <section className="flex items-center justify-center ">
