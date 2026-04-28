@@ -10,7 +10,13 @@ import {
 import {ReactQueryDevtools} from "@tanstack/react-query-devtools";
 
 // Create a client
-const queryClient = new QueryClient()
+const queryClient = new QueryClient({
+    defaultOptions: {  //默认配置
+        queries: {
+            retry: 1 //请求重试次数
+        }
+    }
+})
 export const useTanStackQuery = () => {
 
     const AppQueryProvider: FC<{ children: ReactNode }> = ({children}) => {

@@ -8,11 +8,12 @@ import {
 } from "@/components/ui/card"
 import BlogItem from "@/pages/doc/BlogItem.tsx";
 import {useGetLesson} from "@/services/article.tsx";
+import Error from "@/components/error";
 
 const Topic = () => {
     const {isPending, isError} = useGetLesson()
     if (isPending) return <div>加载中...</div>
-    if (isError) return <div>出错了..</div>
+    if (isError) return <Error/>
     return (
         <>
             <section className="flex items-center justify-center ">
