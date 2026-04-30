@@ -2,6 +2,7 @@ import axios, {type AxiosError} from "axios";
 import {httpError} from "@/config/httpError.ts"
 import {message} from "antd"
 
+// 配置axios用于发送请求
 export const useAxios = () => {
     const http = axios.create({
         baseURL: 'http://localhost:3000',
@@ -25,6 +26,7 @@ export const useAxios = () => {
         // Do something with response data
         return response;
     }, function onRejected(error: AxiosError) {
+        // 响应错误处理
         const errorMessage = httpError[error.status as keyof typeof httpError]
         console.log(errorMessage)
         message.info({content: errorMessage, key: 'info'})
@@ -32,7 +34,6 @@ export const useAxios = () => {
         // Do something with response error
         return Promise.reject(error);
     });
-
-
+    
     return {http}
 }

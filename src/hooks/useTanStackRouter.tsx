@@ -6,8 +6,9 @@ export const useTanStackRouter = () => {
     const AppRouterProvider = () => {
         return (
             <>
-                {/*这里是注册路由以及路由工具的*/}
+                {/*注册路由*/}
                 <RouterProvider router={router}/>
+                {/*路由工具*/}
                 <TanStackRouterDevtools router={router}/>
             </>
         )

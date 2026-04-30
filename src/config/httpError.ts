@@ -1,3 +1,4 @@
+// 错误映射码
 export const httpError = {
     403: "没权限",
     404: "资源没找到",

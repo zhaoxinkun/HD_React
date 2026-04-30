@@ -2,7 +2,7 @@ import {useAxios} from "@/hooks/useAxios.tsx";
 import {useQuery} from "@tanstack/react-query";
 import type {AxiosError} from "axios";
 
-
+// 创建接口,用于定义请求拿到数据的提示
 export interface Article {
     id: string,
     title: string,
@@ -10,6 +10,7 @@ export interface Article {
     views: number
 }
 
+// Lesson请求
 export const useGetLesson = () => {
     const {http} = useAxios()
 

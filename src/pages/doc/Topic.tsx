@@ -11,8 +11,11 @@ import {useGetLesson} from "@/services/article.tsx";
 import Error from "@/components/error";
 
 const Topic = () => {
+    // 发送请求
     const {isPending, isError, error, data} = useGetLesson()
+    // 加载处理
     if (isPending) return <div>加载中...</div>
+    // 错误处理
     if (isError) return <Error error={error}/>
     // console.log(data[0])
     return (

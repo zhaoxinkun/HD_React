@@ -23,7 +23,7 @@ export const useTanStackQuery = () => {
         return <QueryClientProvider client={queryClient}>
             {/* The rest of your application */}
             <ReactQueryDevtools initialIsOpen={true}/>
-            {children}
+            {children} {/*包裹路由*/}
         </QueryClientProvider>
 
     }
