@@ -7,7 +7,7 @@ export interface Article {
     id: string,
     title: string,
     content: string,
-    views: number
+    preview: string
 }
 
 // Lesson请求

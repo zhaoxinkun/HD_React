@@ -1,7 +1,7 @@
 import {createRoute, Outlet} from "@tanstack/react-router";
 import Info from "@/pages/about/Info.tsx";
 import Home from "@/pages/home/Home.tsx";
-import Topic from "@/pages/doc/Topic.tsx";
+import Article from "../pages/doc/Article.tsx";
 import Live from "@/pages/live/Live.tsx";
 import rootRoute from "./root.route.tsx"; //注册到根路由用的
 
@@ -27,10 +27,10 @@ export const aboutInfoRoute = createRoute({
 })
 
 // 关于导航的路由
-export const navTopic = createRoute({
+export const navArticle = createRoute({
     getParentRoute: () => rootRoute,
-    path: '/topic',
-    component: () => <Topic/>
+    path: '/article',
+    component: () => <Article/>
 })
 
 export const navLive = createRoute({

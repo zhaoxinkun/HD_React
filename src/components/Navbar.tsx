@@ -11,7 +11,7 @@ export const Navbar = () => {
                         <Apple size="18"/>
                         <span>Jack.com</span>
                     </Link>
-                    <Link to="/topic">我的文档</Link>
+                    <Link to="/article">我的文档</Link>
                     <Link to="/live">直播导航</Link>
                 </div>
             </div>
